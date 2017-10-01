@@ -1,19 +1,16 @@
-import com.google.gson.Gson
-import com.google.gson.reflect.TypeToken
-import java.io.File
+import workers.JsonWorker
+import workers.XmlWorker
 
 class Main {
     companion object {
-        private var gson = Gson()
+
+        private val jsonWorker: JsonWorker = JsonWorker()
+        private val xmlWorker: XmlWorker = XmlWorker()
 
         @JvmStatic
         fun main(args: Array<String>) {
-            println("HELLO")
-            val companiesList = gson.fromJson<ArrayList<CompanyDto>>(File("dataset.json").readText(),
-                    object : TypeToken<ArrayList<CompanyDto>>() {}.type)
-                    as ArrayList<CompanyDto>
-
-            companiesList.forEach { println("COMPANY : $it") }
+            jsonWorker.performParsing()
+            xmlWorker.performParsing()
         }
     }
 }
