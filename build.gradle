@@ -30,6 +30,10 @@ dependencies {
     compile 'org.jetbrains.exposed:exposed:0.8.6'
     //gson
     compile group: 'com.google.code.gson', name: 'gson', version: '2.7'
+    //gson-xml
+    compile 'com.stanfy:gson-xml-java:0.1.+'
+    //opencsv
+    compile group: 'com.opencsv', name: 'opencsv', version: '3.7'
 }
 
 compileKotlin {
