@@ -40,6 +40,7 @@
     <orderEntry type="library" name="Gradle: org.jetbrains.exposed:exposed:0.8.6" level="project" />
     <orderEntry type="library" name="Gradle: com.google.code.gson:gson:2.7" level="project" />
     <orderEntry type="library" name="Gradle: com.opencsv:opencsv:3.7" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.commons:commons-csv:1.1" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:0.17" level="project" />
     <orderEntry type="library" name="Gradle: org.json:json:20090211" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.1.51" level="project" />

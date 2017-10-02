@@ -39,7 +39,7 @@ dependencies {
     //gson
     compile group: 'com.google.code.gson', name: 'gson', version: '2.7'
     //opencsv
-    compile group: 'com.opencsv', name: 'opencsv', version: '3.7'
+    compile group: 'org.apache.commons', name: 'commons-csv', version: '1.1'
     //kotlin coroutines
     compile "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.17"
     // https://mvnrepository.com/artifact/org.json/json
