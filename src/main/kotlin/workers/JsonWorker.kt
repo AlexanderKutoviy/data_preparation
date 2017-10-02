@@ -12,10 +12,7 @@ class JsonWorker {
 
     private var gson = Gson()
 
-    fun performParsing() {
-        val companiesList = gson.fromJson<ArrayList<CompanyDto>>(File(FILE_NAME).readText(),
-                object : TypeToken<ArrayList<CompanyDto>>() {}.type)
-                as ArrayList<CompanyDto>
-        println("JsonWorkerCOMPANY : $companiesList")
-    }
+    fun performParsing() = gson.fromJson<ArrayList<CompanyDto>>(File(FILE_NAME).readText(),
+            object : TypeToken<ArrayList<CompanyDto>>() {}.type)
+            as ArrayList<CompanyDto>
 }
